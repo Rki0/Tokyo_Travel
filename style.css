@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* intro */
+.intro {
+  background-color: thistle;
+  text-align: center;
+}
+
+.intro-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokyo-img {
+  display: block;
+  height: 330px;
+  width: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.title-why-tokyo {
+  margin-top: 10px;
+}
+
+.title-why-tokyo span {
+  color: tomato;
+}
+
+.reason-why-tokyo {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.reason-why-tokyo span {
+  font-weight: 700;
+}
+
+/* want-to-go */
+.want-to-go {
+  background-color: #fce4ec;
+}
+
+.want-title {
+  margin: 10px 0 10px;
+}
+
+.want-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.want-img div {
+  margin-bottom: 10px;
+}
+
+.want-img a {
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.want-img a:last-child {
+  margin-bottom: 10px;
+}
+
+.want-img a:hover {
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+    0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.want-img img {
+  display: block;
+  width: 280px;
+  height: 225px;
+  border-radius: 15px;
+}
+
+.want-img h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.want-reason {
+  display: none;
+}
+
+/* want-to-eat */
+.want-to-eat {
+  background-color: #f3e5f5;
+}
+
+.eat-title {
+  margin: 10px 0 10px;
+}
+
+.eat-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eat-img div {
+  margin-bottom: 10px;
+}
+
+.eat-img a {
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.eat-img a:last-child {
+  margin-bottom: 10px;
+}
+
+.eat-img a:hover {
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+    0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.eat-img img {
+  display: block;
+  width: 280px;
+  height: 225px;
+  border-radius: 15px;
+}
+
+.eat-img h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.eat-reason {
+  display: none;
+}
+
+/* house */
+.house {
+  background-color: #e8eaf6;
+  text-align: center;
+}
+
+.house-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.house-img {
+  display: block;
+  width: auto;
+  height: 360px;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+.title-why-house {
+  margin-top: 10px;
+}
+
+.reason-why-house {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.reason-why-house span {
+  font-weight: 700;
+}
+
+/* 1024px 화면을 보면서 작성함. */
+@media screen and (min-width: 768px) {
+  /* intro */
+  .intro-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tokyo-img {
+    width: 480px;
+    height: auto;
+    margin-top: 0;
+    margin-right: 10px;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .reason-why-tokyo {
+    font-size: 16px;
+  }
+
+  .reason-why-tokyo span {
+    font-size: 20px;
+  }
+
+  /* want-to-go */
+  .want-to-go {
+    padding: 20px 0;
+  }
+
+  .want-title {
+    margin-top: 0;
+  }
+
+  .want-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .want-img {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .want-img div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .want-img div a {
+    order: 1;
+  }
+
+  .want-img div h2 {
+    order: 2;
+    margin-top: 5px;
+  }
+
+  .want-reason {
+    order: 3;
+    display: block;
+    width: 280px;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* want-to-eat */
+  .want-to-eat {
+    padding: 20px 0;
+  }
+
+  .eat-title {
+    margin-top: 0;
+  }
+
+  .eat-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eat-img {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .eat-img div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .eat-img div a {
+    order: 1;
+  }
+
+  .eat-img div h2 {
+    order: 2;
+    margin-top: 5px;
+  }
+
+  .eat-reason {
+    order: 3;
+    display: block;
+    width: 280px;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* house */
+  .house-content {
+    flex-direction: row;
+  }
+
+  .house-content div:last-child {
+    order: 1;
+  }
+
+  .house-content div:first-child {
+    order: 2;
+  }
+
+  .house-img {
+    height: 500px;
+    margin-left: 20px;
+  }
+
+  .title-why-house span {
+    color: #76d275;
+  }
+
+  .reason-why-house {
+    font-size: 16px;
+  }
+}
+
+/* Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
